@@ -31,6 +31,7 @@ int main() // reads in a list of coordinates from a .csv file and uses Google Ma
 
 		while(getline(input, text)) // assigns variables based on columns in csv file
 		{
+			cout << text << endl;
 			int length = text.length(); // length of line
 			int commaCount = 0;
 
