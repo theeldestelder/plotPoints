@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream>
+#include <string> // stof
 
 using namespace std;
 
