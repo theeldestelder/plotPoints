@@ -75,7 +75,7 @@ int main() // reads in a list of coordinates from a .csv file and uses Google Ma
 			cout << "longitude: " << longitude << endl;
 			cout << "latitude: " << latitude << endl;
 			cout << "place: " << place << endl;
-			cout << "description" << description << endl;
+			cout << "description " << description << endl;
 		}
 
 		cout << "check" << endl;
