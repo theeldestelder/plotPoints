@@ -74,6 +74,15 @@ int main() // reads in a list of coordinates from a .csv file and uses Google Ma
 			cout << "latitude: " << latitude << endl;
 			cout << "place: " << place << endl;
 			cout << "description: " << description << endl << endl;
+
+			double realLongitude = stof(longitude);
+			double realLatitude = stof(latitude);
+
+			cout << "double long: " << realLongitude << endl;
+			cout << "double lat: " << realLatitude << endl;
+
+
+			/*USE MAPS API TO PLOT THE POINTS USING THE DATA FOR THE CURRENT POINT */
 		}
 
 
