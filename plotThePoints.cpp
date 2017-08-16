@@ -23,13 +23,15 @@ int main() // reads in a list of coordinates from a .csv file and uses Google Ma
 
 		cout << text << endl;
 
-		/*double*/ string latitude = 0;
-		/*double*/ string longitude = 0;
+		/*double*/ 
+		string latitude = 0;
+		/*double*/ 
+		string longitude = 0;
 		string description = "";
 		string place = "";
 
-		input.ignore();
-		
+		cout << "slsllslsl" << endl;
+
 		while(getline(input, text)) // assigns variables based on columns in csv file
 		{
 			cout << text << endl;
