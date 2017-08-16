@@ -11,7 +11,7 @@ int main() // reads in a list of coordinates from a .csv file and uses Google Ma
 
 	string text = "";
 
-	open >> text >> text >> text >> text; // first line 
+	input >> text >> text >> text >> text; // first line 
 
 
 	double latitude = 0;
