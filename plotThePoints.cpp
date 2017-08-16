@@ -9,23 +9,32 @@ int main() // reads in a list of coordinates from a .csv file and uses Google Ma
 
 	input.open("Combined Data Set.csv"); 
 
-	string text = "";
-
-	input >> text >> text >> text >> text; // first line 
-
-
-	double latitude = 0;
-	double longitude = 0;
-	string description = "";
-	string place = "";
-
-
-	while(input >> longitude >> latitude >> place >> description) // assigns variables based on columns in csv file
+	if(input.fail()) // fails to open file
 	{
-		//plot the points with the given data
-		cout << "longitude: " << longitude << endl;
-		cout << "latitude: " << latitude << endl;
-		cout << "place: " << place << endl;
-		cout << "description" << description << endl;
+		cout << "Error opening file" << endl;
+	}
+	else // successfully opens file
+	{
+		string text = "";
+
+		input >> text >> text >> text >> text; // first line 
+
+
+		double latitude = 0;
+		double longitude = 0;
+		string description = "";
+		string place = "";
+
+
+		while(input >> longitude >> latitude >> place >> description) // assigns variables based on columns in csv file
+		{
+			//plot the points with the given data
+			cout << "longitude: " << longitude << endl;
+			cout << "latitude: " << latitude << endl;
+			cout << "place: " << place << endl;
+			cout << "description" << description << endl;
+		}
+
+		input.close();
 	}
 }
