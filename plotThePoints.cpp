@@ -1,6 +1,8 @@
 #include <iostream>
 #include <fstream>
 
+using namespace std;
+
 int main() // reads in a list of coordinates from a .csv file and uses Google Maps to draw those points on a map
 {
 	ifstream input;
