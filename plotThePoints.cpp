@@ -1,6 +1,6 @@
 #include <iostream>
 #include <fstream>
-#include <string>
+//#include <string>
 
 using namespace std;
 
@@ -76,8 +76,8 @@ int main() // reads in a list of coordinates from a .csv file and uses Google Ma
 			cout << "place: " << place << endl;
 			cout << "description: " << description << endl << endl;
 
-			double realLongitude = stod(longitude);
-			double realLatitude = stod(latitude);
+			double realLongitude = stod(longitude.c_string());
+			double realLatitude = stod(latitude.c_string());
 
 			cout << "double long: " << realLongitude << endl;
 			cout << "double lat: " << realLatitude << endl;
