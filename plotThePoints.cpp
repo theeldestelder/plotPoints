@@ -76,8 +76,8 @@ int main() // reads in a list of coordinates from a .csv file and uses Google Ma
 			cout << "place: " << place << endl;
 			cout << "description: " << description << endl << endl;
 
-			double realLongitude = stof(longitude);
-			double realLatitude = stof(latitude);
+			double realLongitude = stod(longitude);
+			double realLatitude = stod(latitude);
 
 			cout << "double long: " << realLongitude << endl;
 			cout << "double lat: " << realLatitude << endl;
