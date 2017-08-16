@@ -24,9 +24,9 @@ int main() // reads in a list of coordinates from a .csv file and uses Google Ma
 		cout << text << endl;
 
 		/*double*/ 
-		string latitude = 0;
+		string latitude = "";//0;
 		/*double*/ 
-		string longitude = 0;
+		string longitude = "";//0;
 		string description = "";
 		string place = "";
 
