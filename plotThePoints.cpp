@@ -45,7 +45,7 @@ int main() // reads in a list of coordinates from a .csv file and uses Google Ma
 
 			for(int i = 0; i < length; i++) // breaks line into each column
 			{
-				cout << text.at(i) << " + " << i << endl;
+				//cout << text.at(i) << " + " << i << endl;
 				if(text.at(i) == ',')
 				{
 					commaCount++;
