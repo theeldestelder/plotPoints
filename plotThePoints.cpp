@@ -3,6 +3,8 @@
 
 using namespace std;
 
+
+
 int main() // reads in a list of coordinates from a .csv file and uses Google Maps to draw those points on a map
 {
 	ifstream input;
@@ -17,18 +19,48 @@ int main() // reads in a list of coordinates from a .csv file and uses Google Ma
 	{
 		string text = "";
 
-		input >> text >> text >> text >> text; // first line 
+		getline(input, text)
 
 		cout << text << endl;
 
-		double latitude = 0;
-		double longitude = 0;
+		/*double*/ string latitude = 0;
+		/*double*/ string longitude = 0;
 		string description = "";
 		string place = "";
 
 
-		while(input >> longitude >> latitude >> place >> description) // assigns variables based on columns in csv file
+		while(getline(input, text)) // assigns variables based on columns in csv file
 		{
+			int length = text.length(); // length of line
+			int commaCount = 0;
+
+			for(int i = 0; i < length; i++) // breaks line into each column
+			{
+				if(text.at(i) == ',')
+				{
+					commaCount++;
+				}
+				else
+				{
+					if(commaCount == 0)
+					{
+						longitude += text.at(i);
+					}
+					else if(commaCount == 1)
+					{
+						latitude += text.at(i);
+					}
+					else if(commaCount == 2)
+					{
+						place += text.at(i);
+					}
+					else if(commaCount == 3)
+					{
+						description += text.at(i);
+					}
+				}
+			}
+
 			//plot the points with the given data
 			cout << "longitude: " << longitude << endl;
 			cout << "latitude: " << latitude << endl;
