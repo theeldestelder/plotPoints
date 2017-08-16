@@ -19,7 +19,7 @@ int main() // reads in a list of coordinates from a .csv file and uses Google Ma
 	{
 		string text = "";
 
-		getline(input, text)
+		getline(input, text);
 
 		cout << text << endl;
 
