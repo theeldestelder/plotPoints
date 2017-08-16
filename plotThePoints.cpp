@@ -28,7 +28,8 @@ int main() // reads in a list of coordinates from a .csv file and uses Google Ma
 		string description = "";
 		string place = "";
 
-
+		input.ignore();
+		
 		while(getline(input, text)) // assigns variables based on columns in csv file
 		{
 			cout << text << endl;
@@ -69,6 +70,7 @@ int main() // reads in a list of coordinates from a .csv file and uses Google Ma
 			cout << "place: " << place << endl;
 			cout << "description" << description << endl;
 		}
+
 		cout << "check" << endl;
 
 		input.close();
