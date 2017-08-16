@@ -38,6 +38,11 @@ int main() // reads in a list of coordinates from a .csv file and uses Google Ma
 			int length = text.length(); // length of line
 			int commaCount = 0;
 
+			string latitude = "";
+			string longitude = "";
+			string description = "";
+			string place = "";
+
 			for(int i = 0; i < length; i++) // breaks line into each column
 			{
 				cout << text.at(i) << " + " << i << endl;
