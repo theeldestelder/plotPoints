@@ -20,7 +20,7 @@ int main() // reads in a list of coordinates from a .csv file and uses Google Ma
 	string place = "";
 
 
-	while(open >> longitude >> latitude >> place >> description) // assigns variables based on columns in csv file
+	while(input >> longitude >> latitude >> place >> description) // assigns variables based on columns in csv file
 	{
 		//plot the points with the given data
 		cout << "longitude: " << longitude << endl;
